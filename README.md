@@ -10,6 +10,9 @@
 
 <!-- Profile Badges & Social Links -->
 <p align="center">
+  <a href="https://sabbirhossain-git.github.io/sabbirhossain-git/">
+    <img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Site-14B8A6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
+  </a>
   <a href="https://github.com/sabbirhossain-git?tab=followers">
     <img src="https://img.shields.io/github/followers/sabbirhossain-git?label=Followers&style=for-the-badge&color=0EA5E9&logo=github&logoColor=white" alt="GitHub Followers" />
   </a>
@@ -27,14 +30,18 @@
 
 ### 👨‍💻 About Me
 
+<img align="right" width="210" style="border-radius: 18px; margin-left: 20px; margin-bottom: 10px;" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/main/sabbir-avatar.png" alt="Sabbir Hossain" />
+
 I am a **Software Engineering & IoT Developer** and a **University Student** majoring in Computer Science & Engineering (CSE). I build full-stack web applications, autonomous AI agent ecosystems, and microcontroller-based IoT systems.
 
 - 🎓 **Academic Focus:** University Student studying Data Structures & Algorithms, Operating Systems, Database Management Systems (DBMS), Computer Networks, and Embedded Systems.
 - 🤖 **AI & Automation:** Architecting multi-agent workflows, RAG pipelines, Model Context Protocol (MCP) integrations, and automated developer toolchains.
-- ⚡ **Hardware & IoT:** Designing ESP32/Arduino firmware, real-time sensor telemetry, and edge-AI integrations.
-- 🌱 **Current Exploration:** Deep learning-assisted optical/LiDAR signal processing, deterministic agent evaluation harnesses, and scalable backend architectures.
-- 💬 **Ask Me About:** Python, TypeScript, C/C++, FastAPI, Next.js, ESP32, Multi-Agent Systems, and System Design.
+- ⚡ **Hardware & IoT:** Designing ESP32/ESP8266/Arduino firmware, real-time sensor telemetry, and edge-AI integrations.
+- 🌐 **Interactive Portfolio:** Check out my 3D Bento & CLI Portfolio at **[sabbirhossain-git.github.io/sabbirhossain-git](https://sabbirhossain-git.github.io/sabbirhossain-git/)**
+- 💬 **Ask Me About:** Python, Django, FastAPI, TypeScript, C/C++, ESP32, Multi-Agent Systems, and System Design.
 - 📫 **Reach Me:** [sabbirhossain50000@gmail.com](mailto:sabbirhossain50000@gmail.com)
+
+<br clear="right"/>
 
 ---
 
@@ -43,10 +50,10 @@ I am a **Software Engineering & IoT Developer** and a **University Student** maj
 <div align="center">
 
 #### Languages & Core Programming
-[![Languages](https://skillicons.dev/icons?i=c,cpp,py,ts,js,html,css,bash,md&theme=dark)](https://skillicons.dev)
+[![Languages](https://skillicons.dev/icons?i=c,cpp,py,java,ts,js,html,css,bash,md&theme=dark)](https://skillicons.dev)
 
 #### Backend, Frontend & Databases
-[![Frameworks & DB](https://skillicons.dev/icons?i=nodejs,react,nextjs,fastapi,django,tailwind,postgres,mysql,mongodb,supabase,sqlite&theme=dark)](https://skillicons.dev)
+[![Frameworks & DB](https://skillicons.dev/icons?i=django,fastapi,nodejs,react,nextjs,tailwind,postgres,mysql,mongodb,supabase,sqlite&theme=dark)](https://skillicons.dev)
 
 #### IoT, DevOps, Cloud & Developer Tools
 [![IoT & DevOps](https://skillicons.dev/icons?i=arduino,raspberrypi,docker,git,github,githubactions,linux,vscode,postman,vercel,cloudflare&theme=dark)](https://skillicons.dev)
@@ -55,14 +62,14 @@ I am a **Software Engineering & IoT Developer** and a **University Student** maj
 
 ---
 
-### 🚀 Core Engineering Domains & Focus Areas
+### 🚀 Featured Engineering Projects
 
-| Domain | Key Technologies & Methodologies | Focus & Deliverables |
+| Project | Tech Stack | Architecture & Key Contributions |
 | :--- | :--- | :--- |
-| **🤖 Autonomous AI & Agents** | Python, LangGraph, MCP, RAG, Prompt Engineering, LLM Evals | Multi-agent orchestration, grounded research pipelines, automated code review & security auditing |
-| **🌐 Full-Stack Engineering** | TypeScript, Next.js, React, FastAPI, Django, PostgreSQL, Supabase | REST/GraphQL APIs, real-time dashboards, e-commerce systems, & database management systems |
-| **📡 Embedded Systems & IoT** | C/C++, ESP-IDF, Arduino, ESP32, RTOS, MQTT, Sensor Fusion | Microcontroller firmware, smart telemetry, hardware-software co-design, & optical/ToF sensing |
-| **🧮 Academic CS & Algorithms** | C++, Python, Graph Theory, Dynamic Programming, DBMS, OS | Competitive programming, formal algorithm verification, & university lab engineering |
+| **🤖 IoT Smart Reconnaissance Search & Rescue Robot** | `NodeMCU ESP8266` `C++` `MQ-2` `PIR` `L293D` | Wi-Fi teleoperated rover with localized multi-hazard gas/thermal detection, deterministic FSM priority alarms, and automatic motor-stop failsafe. |
+| **📅 [Panic-Planner](https://github.com/ZarinSultana/Panic-Planner)** | `Python` `Django 6.0` `SQLite` `HTML/CSS` | Collaborative academic planning platform; built the dedicated **Resources Module** for subject-wise study asset curation and emergency resources. |
+| **🧠 Autonomous Multi-Agent AI & Skill OS** | `Python` `Node.js` `MCP` `Playwright` `Apps Script` | 91-skill self-evolving multi-agent architecture with Second-Brain knowledge sync, automated deadline alarms, and 18/18 verified acceptance tests. |
+| **🛣️ SkillBridge SRS & Electronic Toll Management (TMS)** | `Java` `MySQL` `IEEE SRS` `UML` `ERD` | Full-cycle Software Requirements Specification (SRS) for a student freelance marketplace + relational database toll plaza automation system. |
 
 ---
 
@@ -119,6 +126,9 @@ I am a **Software Engineering & IoT Developer** and a **University Student** maj
 
 I'm always open to collaborating on **Open-Source Projects**, **AI Agent Architectures**, **Full-Stack Web Apps**, and **IoT Systems**.
 
+<a href="https://sabbirhossain-git.github.io/sabbirhossain-git/">
+  <img src="https://img.shields.io/badge/Portfolio-sabbirhossain--git-14B8A6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+</a>
 <a href="https://github.com/sabbirhossain-git">
   <img src="https://img.shields.io/badge/GitHub-sabbirhossain--git-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </a>
