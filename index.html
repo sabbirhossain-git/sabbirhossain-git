@@ -190,6 +190,7 @@
         <a href="#bento" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">Architecture</a>
         <a href="#projects" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">Projects</a>
         <a href="#terminal-section" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">AI CLI</a>
+        <a href="#gallery" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">Photos</a>
         <a href="#stats" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">GitHub Metrics</a>
         <a href="#contact" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">Contact</a>
       </nav>
@@ -300,6 +301,7 @@
             <!-- Portrait Container -->
             <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden bg-gradient-to-b from-slate-800/80 to-slate-950 border-2 border-sky-400/40 shadow-2xl shadow-sky-500/20 group">
               <img 
+                id="hero-portrait-img"
                 src="sabbir-avatar.png" 
                 width="320"
                 height="320"
@@ -688,23 +690,75 @@
 
         <div class="grid md:grid-cols-2 gap-6 mb-6">
           <div class="bento-card rounded-3xl p-4 flex items-center justify-center">
-            <img class="w-full max-w-md" loading="lazy" src="https://github-readme-stats.vercel.app/api?username=sabbirhossain-git&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=38BDF8&icon_color=2DD4BF&text_color=E2E8F0" alt="Sabbir Hossain GitHub Stats" />
+            <img class="w-full max-w-md" loading="lazy" src="assets/img/github-stats.svg" alt="Sabbir Hossain GitHub Stats" />
           </div>
           <div class="bento-card rounded-3xl p-4 flex items-center justify-center">
-            <img class="w-full max-w-md" loading="lazy" src="https://streak-stats.demolab.com?user=sabbirhossain-git&theme=tokyonight&hide_border=true&background=00000000&ring=38BDF8&fire=2DD4BF&currStreakLabel=38BDF8" alt="Sabbir Hossain GitHub Streak" />
+            <img class="w-full max-w-md" loading="lazy" src="assets/img/github-langs.svg" alt="Sabbir Hossain Core Languages" />
           </div>
         </div>
 
         <!-- Contribution Snake Card -->
         <div class="bento-card rounded-3xl p-6 text-center">
-          <div class="text-xs font-mono text-sky-400 mb-3">AUTOMATED GITHUB ACTIONS CONTRIBUTION SNAKE</div>
+          <div class="text-xs font-mono text-sky-400 mb-3">AUTOMATED GITHUB CONTRIBUTION TELEMETRY MATRIX</div>
           <img 
             class="mx-auto w-full max-w-4xl" 
             loading="lazy"
-            src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/output/github-contribution-grid-snake-dark.svg" 
-            onerror="this.onerror=null; this.src='https://github-readme-activity-graph.vercel.app/graph?username=sabbirhossain-git&bg_color=0D1117&color=38BDF8&line=2DD4BF&point=FFFFFF&area=true&hide_border=true';"
-            alt="GitHub Contribution Snake Animation" 
+            src="assets/img/github-snake.svg" 
+            alt="GitHub Contribution Matrix Animation" 
           />
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY & PORTRAIT SWITCHER SECTION -->
+    <section id="gallery" class="relative z-10 py-24 px-6 border-t border-slate-800/60">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="font-mono text-xs uppercase tracking-widest text-purple-400 bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full">04.5 // Portrait &amp; Moments Gallery</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">Photos &amp; Identity</h2>
+          <p class="text-slate-400 mt-2 text-sm">Click any portrait below to preview it in the 3D Hero Portal above. Ready for adding future event, robotics lab, and project photos.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <button onclick="document.getElementById('hero-portrait-img').src='sabbir-avatar.png'; window.location.hash='#hero';" class="bento-card rounded-3xl p-3 text-left group cursor-pointer">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 mb-3 border border-slate-800">
+              <img src="sabbir-avatar.png" alt="Sabbir Hossain — Executive Suit Portrait" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="px-2 pb-1">
+              <div class="text-xs font-bold text-white">Executive Studio</div>
+              <div class="text-[11px] font-mono text-sky-400">Primary Portrait • HD</div>
+            </div>
+          </button>
+
+          <button onclick="document.getElementById('hero-portrait-img').src='assets/img/sabbir-photo-2.jpg'; window.location.hash='#hero';" class="bento-card rounded-3xl p-3 text-left group cursor-pointer">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 mb-3 border border-slate-800">
+              <img src="assets/img/sabbir-photo-2.jpg" alt="Sabbir Hossain — Casual Portrait" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="px-2 pb-1">
+              <div class="text-xs font-bold text-white">Developer Casual</div>
+              <div class="text-[11px] font-mono text-teal-400">Click to Set in Hero</div>
+            </div>
+          </button>
+
+          <button onclick="document.getElementById('hero-portrait-img').src='assets/img/sabbir-photo-3.jpg'; window.location.hash='#hero';" class="bento-card rounded-3xl p-3 text-left group cursor-pointer">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 mb-3 border border-slate-800">
+              <img src="assets/img/sabbir-photo-3.jpg" alt="Sabbir Hossain — Campus Portrait" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="px-2 pb-1">
+              <div class="text-xs font-bold text-white">Academic &amp; Lab</div>
+              <div class="text-[11px] font-mono text-purple-400">Click to Set in Hero</div>
+            </div>
+          </button>
+
+          <button onclick="document.getElementById('hero-portrait-img').src='assets/img/sabbir-photo-4.jpg'; window.location.hash='#hero';" class="bento-card rounded-3xl p-3 text-left group cursor-pointer">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 mb-3 border border-slate-800">
+              <img src="assets/img/sabbir-photo-4.jpg" alt="Sabbir Hossain — Denim Portrait" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="px-2 pb-1">
+              <div class="text-xs font-bold text-white">Outdoor &amp; Tech</div>
+              <div class="text-[11px] font-mono text-amber-400">Click to Set in Hero</div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
@@ -768,14 +822,22 @@
 
         </div>
 
-        <div class="flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:sabbirhossain50000@gmail.com" aria-label="Send Direct Email" class="px-8 py-4 rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 font-bold text-sm hover:opacity-95 transition shadow-xl shadow-sky-500/20 flex items-center gap-2">
-            <i class="fas fa-paper-plane"></i>
-            <span>Send Direct Email</span>
+        <div class="flex flex-wrap items-center justify-center gap-3.5">
+          <a href="https://www.facebook.com/share/1JGr1sXEsS/" target="_blank" rel="noopener" aria-label="Open Facebook Profile" class="px-6 py-3.5 rounded-xl bg-[#1877F2] text-white font-bold text-sm hover:opacity-95 transition shadow-lg shadow-[#1877F2]/25 flex items-center gap-2">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook Profile</span>
           </a>
-          <a href="tel:+8801307919989" aria-label="Call 01307919989" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-700 text-white font-semibold text-sm hover:border-emerald-400 transition flex items-center gap-2">
-            <i class="fas fa-phone text-emerald-400"></i>
-            <span>Call: 01307919989</span>
+          <a href="https://wa.me/8801307919989" target="_blank" rel="noopener" aria-label="Chat on WhatsApp 01307919989" class="px-6 py-3.5 rounded-xl bg-emerald-500 text-slate-950 font-bold text-sm hover:opacity-95 transition shadow-lg shadow-emerald-500/25 flex items-center gap-2">
+            <i class="fab fa-whatsapp text-base"></i>
+            <span>WhatsApp: 01307919989</span>
+          </a>
+          <a href="https://www.instagram.com/s.a.b.b.i.r__h.o.s.s.a.i.n" target="_blank" rel="noopener" aria-label="Open Instagram Profile" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold text-sm hover:opacity-95 transition shadow-lg shadow-pink-500/25 flex items-center gap-2">
+            <i class="fab fa-instagram text-base"></i>
+            <span>Instagram Profile</span>
+          </a>
+          <a href="mailto:sabbirhossain50000@gmail.com" aria-label="Send Direct Email" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 font-bold text-sm hover:opacity-95 transition shadow-lg shadow-sky-500/25 flex items-center gap-2">
+            <i class="fas fa-envelope"></i>
+            <span>Email: sabbirhossain50000@gmail.com</span>
           </a>
         </div>
       </div>

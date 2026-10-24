@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+  <rect width="495" height="195" rx="16" fill="#0B1120" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="25" y="36" fill="#38BDF8" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800">Sabbir Hossain — GitHub Telemetry</text>
+  <text x="25" y="68" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="13">★ Public &amp; Lab Repos:</text>
+  <text x="235" y="68" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">18+ Repositories</text>
+  <text x="25" y="96" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="13">⚡ Total Commits (2026):</text>
+  <text x="235" y="96" fill="#2DD4BF" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">420+ Verified Commits</text>
+  <text x="25" y="124" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="13">🧠 Autonomous AI Skills:</text>
+  <text x="235" y="124" fill="#A855F7" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">86 User / 104 Total Skills</text>
+  <text x="25" y="152" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="13">🔧 Hardware &amp; IoT Stack:</text>
+  <text x="235" y="152" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">ESP32 • ESP8266 • LiDAR</text>
+  <circle cx="430" cy="105" r="42" stroke="#1E293B" stroke-width="8" fill="none"/>
+  <circle cx="430" cy="105" r="42" stroke="#2DD4BF" stroke-width="8" stroke-dasharray="245 264" stroke-linecap="round" transform="rotate(-90 430 105)" fill="none"/>
+  <text x="430" y="102" text-anchor="middle" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="18" font-weight="900">A+</text>
+  <text x="430" y="120" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="9">99.95%</text>
+</svg>

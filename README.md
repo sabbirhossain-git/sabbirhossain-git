@@ -83,49 +83,21 @@ I am a **Software Engineering & IoT Developer** and a **University Student** maj
 
 ---
 
-### 📊 GitHub Analytics & Contribution Metrics
+### 📊 GitHub Analytics & Engineering Telemetry
 
 <div align="center">
 
 <a href="https://github.com/sabbirhossain-git">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=sabbirhossain-git&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&text_color=C9D1D9" alt="Sabbir's GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabbirhossain-git&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9" alt="Top Languages" />
+  <img width="48%" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/main/assets/img/github-stats.svg" alt="Sabbir's GitHub Stats" />
+  <img width="48%" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/main/assets/img/github-langs.svg" alt="Top Languages" />
 </a>
 
-<br/>
+<br/><br/>
 
 <a href="https://github.com/sabbirhossain-git">
-  <img src="https://streak-stats.demolab.com?user=sabbirhossain-git&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8" alt="GitHub Streak" />
+  <img width="98%" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/main/assets/img/github-snake.svg" alt="GitHub Contribution Matrix" />
 </a>
 
-<br/>
-
-<a href="https://github.com/sabbirhossain-git">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=sabbirhossain-git&bg_color=0D1117&color=38BDF8&line=38BDF8&point=FFFFFF&area=true&hide_border=true" alt="Contribution Activity Graph" />
-</a>
-
-</div>
-
----
-
-### 🏆 GitHub Profile Trophies
-
-<div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=sabbirhossain-git&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="GitHub Trophies" />
-  </a>
-</div>
-
----
-
-### 🐍 Contribution Graph Snake Animation
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
 </div>
 
 ---
