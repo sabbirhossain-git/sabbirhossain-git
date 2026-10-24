@@ -5,6 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sabbir Hossain | Software Engineering & IoT Developer</title>
   <meta name="description" content="Official Portfolio of Sabbir Hossain — Software Engineering & IoT Developer, University Student (CSE), building Autonomous AI Agents, Full-Stack Web Applications, and Embedded Systems." />
+  <meta name="keywords" content="Sabbir Hossain, Software Engineering, IoT Developer, University Student, CSE, Python, Django, FastAPI, Next.js, ESP32, Multi-Agent AI, sabbirhossain-git" />
+  <meta name="author" content="Sabbir Hossain" />
+  <meta name="theme-color" content="#030712" />
+  <link rel="canonical" href="https://sabbirhossain-git.github.io/" />
+  <link rel="icon" type="image/png" href="sabbir-avatar.png" />
+
+  <!-- OpenGraph / Facebook / LinkedIn Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sabbirhossain-git.github.io/" />
+  <meta property="og:title" content="Sabbir Hossain | Software Engineering & IoT Developer" />
+  <meta property="og:description" content="Software Engineering & IoT Developer | University Student (CSE) — Architecting Full-Stack Web Apps, Autonomous Multi-Agent AI Systems, and ESP32/ESP8266 Robotics." />
+  <meta property="og:image" content="https://sabbirhossain-git.github.io/sabbir-avatar.png" />
+
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://sabbirhossain-git.github.io/" />
+  <meta name="twitter:title" content="Sabbir Hossain | Software Engineering & IoT Developer" />
+  <meta name="twitter:description" content="Software Engineering & IoT Developer | University Student (CSE) — Architecting Full-Stack Web Apps, Autonomous Multi-Agent AI Systems, and ESP32/ESP8266 Robotics." />
+  <meta name="twitter:image" content="https://sabbirhossain-git.github.io/sabbir-avatar.png" />
+
+  <!-- JSON-LD Structured Data (Schema.org Person & ProfilePage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Sabbir Hossain",
+      "jobTitle": "Software Engineering & IoT Developer",
+      "description": "Software Engineering & IoT Developer and University Student majoring in Computer Science & Engineering (CSE).",
+      "url": "https://sabbirhossain-git.github.io/",
+      "image": "https://sabbirhossain-git.github.io/sabbir-avatar.png",
+      "email": "mailto:sabbirhossain50000@gmail.com",
+      "sameAs": [
+        "https://github.com/sabbirhossain-git",
+        "https://sabbirhossain-git.github.io/"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "Internet of Things (IoT)",
+        "Python",
+        "Django",
+        "FastAPI",
+        "TypeScript",
+        "Next.js",
+        "ESP32",
+        "Multi-Agent AI Systems",
+        "Relational Databases"
+      ]
+    }
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,14 +114,12 @@
       color: #f8fafc;
       overflow-x: hidden;
     }
-    /* Aceternity / Linear Grid Background */
     .bg-grid-pattern {
       background-size: 42px 42px;
       background-image: 
         linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
     }
-    /* Mouse Spotlight Follower */
     .spotlight-overlay {
       pointer-events: none;
       position: fixed;
@@ -82,7 +133,6 @@
       );
       transition: opacity 0.3s ease;
     }
-    /* Bento Card Glow Effect */
     .bento-card {
       position: relative;
       background: rgba(15, 23, 42, 0.65);
@@ -96,7 +146,6 @@
       box-shadow: 0 20px 50px -15px rgba(14, 165, 233, 0.22);
       transform: translateY(-4px);
     }
-    /* Scroll Reveal Animation */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -106,7 +155,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-    /* Custom Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #030712; }
     ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
@@ -116,15 +164,15 @@
 <body class="bg-grid-pattern font-sans antialiased selection:bg-sky-500 selection:text-slate-950">
 
   <!-- Interactive Cursor Spotlight -->
-  <div id="spotlight" class="spotlight-overlay"></div>
+  <div id="spotlight" class="spotlight-overlay" aria-hidden="true"></div>
 
   <!-- Interactive Neural Particle Canvas -->
-  <canvas id="particle-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+  <canvas id="particle-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40" aria-hidden="true"></canvas>
 
   <!-- Floating Glassmorphic Dock / Header -->
   <header class="fixed top-4 left-0 right-0 z-50 px-4">
     <div class="max-w-5xl mx-auto bg-slate-900/75 backdrop-blur-xl border border-slate-800/80 rounded-2xl px-5 py-3 flex items-center justify-between shadow-2xl shadow-black/50">
-      <a href="#hero" class="flex items-center gap-2.5 group">
+      <a href="#hero" aria-label="Sabbir Hossain Home" class="flex items-center gap-2.5 group">
         <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-sky-400 to-teal-500 flex items-center justify-center text-slate-950 font-black font-mono text-base shadow-lg shadow-sky-500/20 group-hover:scale-105 transition">
           SH
         </div>
@@ -134,7 +182,7 @@
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-1 bg-slate-950/60 border border-slate-800/80 rounded-xl p-1 text-xs font-medium text-slate-300">
+      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-1 bg-slate-950/60 border border-slate-800/80 rounded-xl p-1 text-xs font-medium text-slate-300">
         <a href="#about" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">About</a>
         <a href="#bento" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">Architecture</a>
         <a href="#projects" class="px-3.5 py-1.5 rounded-lg hover:bg-slate-800 hover:text-sky-400 transition">Projects</a>
@@ -144,11 +192,11 @@
       </nav>
 
       <div class="flex items-center gap-2.5">
-        <button onclick="toggleCmdPalette()" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 text-xs font-mono transition" title="Open Command Palette">
+        <button onclick="toggleCmdPalette()" aria-label="Open Command Palette (Cmd+K)" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 text-xs font-mono transition" title="Open Command Palette">
           <i class="fas fa-terminal text-sky-400 text-[10px]"></i>
           <span>Cmd + K</span>
         </button>
-        <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 hover:opacity-95 transition shadow-lg shadow-sky-500/20 flex items-center gap-1.5">
+        <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" aria-label="Visit Sabbir Hossain GitHub Profile" class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 hover:opacity-95 transition shadow-lg shadow-sky-500/20 flex items-center gap-1.5">
           <i class="fab fa-github text-sm"></i>
           <span>GitHub</span>
         </a>
@@ -156,514 +204,516 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="relative z-10 min-h-screen flex items-center justify-center pt-28 pb-16 px-6">
-    <!-- Ambient Background Glows -->
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/15 rounded-full blur-[130px] pointer-events-none"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-500/15 rounded-full blur-[130px] pointer-events-none"></div>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative z-10 min-h-screen flex items-center justify-center pt-28 pb-16 px-6">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/15 rounded-full blur-[130px] pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-500/15 rounded-full blur-[130px] pointer-events-none" aria-hidden="true"></div>
 
-    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
-      
-      <!-- Left Column: Hero Copy & Interactive Badges -->
-      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-sky-500/30 text-sky-400 text-xs font-mono">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-400"></span>
-          </span>
-          <span>Available for Software Engineering, AI &amp; IoT Collaborations</span>
-        </div>
-
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.08] text-white">
-          Engineering <br class="hidden sm:inline" />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-300 to-indigo-400">
-            Intelligent Systems
-          </span>
-          &amp; Edge IoT.
-        </h1>
-
-        <!-- Dynamic Typewriter Line -->
-        <div class="h-8 flex items-center justify-center lg:justify-start font-mono text-sm sm:text-base text-slate-300">
-          <span class="text-sky-400 mr-2">&gt;</span>
-          <span id="typewriter-text" class="font-semibold text-teal-300">Software Engineering &amp; IoT Developer</span>
-          <span class="w-2 h-5 bg-sky-400 ml-1 animate-pulse inline-block"></span>
-        </div>
-
-        <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-          Hi, I'm <strong class="text-white font-semibold">Sabbir Hossain</strong> — a <strong class="text-sky-300 font-medium">Software Engineering &amp; IoT Developer</strong> and <strong class="text-teal-300 font-medium">University Student</strong> majoring in Computer Science &amp; Engineering (CSE). I architect full-stack web applications, multi-agent AI ecosystems, and real-time microcontroller firmware.
-        </p>
-
-        <!-- Primary Action Buttons -->
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
-          <a href="#projects" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 font-bold text-sm hover:scale-[1.02] transition shadow-xl shadow-sky-500/20 flex items-center gap-2">
-            <i class="fas fa-rocket"></i>
-            <span>Explore Projects</span>
-          </a>
-          <a href="#terminal-section" class="px-6 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-slate-200 font-semibold text-sm hover:border-sky-400/50 hover:text-sky-300 transition flex items-center gap-2">
-            <i class="fas fa-terminal text-sky-400"></i>
-            <span>Launch Live Terminal</span>
-          </a>
-          <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="px-5 py-3.5 rounded-xl bg-slate-900/60 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition text-sm flex items-center gap-2">
-            <i class="fab fa-github text-base"></i>
-            <span>@sabbirhossain-git</span>
-          </a>
-        </div>
-
-        <!-- Quick Engineering Telemetry Pills -->
-        <div class="pt-4 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0">
-          <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-3 text-left">
-            <div class="text-xl sm:text-2xl font-black text-white font-mono">91+</div>
-            <div class="text-[11px] text-slate-400">Autonomous AI Skills</div>
-          </div>
-          <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-3 text-left">
-            <div class="text-xl sm:text-2xl font-black text-sky-400 font-mono">Full-Stack</div>
-            <div class="text-[11px] text-slate-400">Django • FastAPI • Next.js</div>
-          </div>
-          <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-3 text-left">
-            <div class="text-xl sm:text-2xl font-black text-teal-400 font-mono">Edge IoT</div>
-            <div class="text-[11px] text-slate-400">ESP32 • ESP8266 • C++</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column: 3D Avatar Portal with Sabbir's Real Photo from Google Drive -->
-      <div class="lg:col-span-5 flex justify-center">
-        <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 flex items-center justify-center animate-float">
-          <!-- Rotating Cyber Ring -->
-          <div class="absolute inset-0 rounded-full border-2 border-dashed border-sky-400/30 animate-spin-slow"></div>
-          <div class="absolute inset-4 rounded-full border border-teal-400/20"></div>
-          <!-- Ambient Aura -->
-          <div class="absolute inset-6 rounded-full bg-gradient-to-tr from-sky-500/25 via-teal-400/15 to-indigo-500/25 blur-2xl animate-pulse-glow"></div>
-
-          <!-- Portrait Container -->
-          <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden bg-gradient-to-b from-slate-800/80 to-slate-950 border-2 border-sky-400/40 shadow-2xl shadow-sky-500/20 group">
-            <img 
-              src="sabbir-avatar.png" 
-              onerror="this.onerror=null; this.src='https://github.com/sabbirhossain-git.png';"
-              alt="Sabbir Hossain" 
-              class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-            />
-            <!-- Bottom Status Overlay Badge -->
-            <div class="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md border border-slate-800 rounded-xl px-3.5 py-2 flex items-center justify-between">
-              <div>
-                <div class="text-xs font-bold text-white">Sabbir Hossain</div>
-                <div class="text-[10px] font-mono text-sky-400">University Student • CSE</div>
-              </div>
-              <span class="px-2 py-0.5 rounded-md bg-teal-500/20 border border-teal-500/40 text-teal-300 font-mono text-[10px]">
-                Verified
-              </span>
-            </div>
-          </div>
-
-          <!-- Floating Orbit Tech Badges -->
-          <div class="absolute -top-2 -right-2 bg-slate-900/95 border border-slate-700 rounded-2xl px-3 py-2 shadow-xl flex items-center gap-2 text-xs font-mono text-sky-300">
-            <i class="fab fa-python text-yellow-400 text-base"></i>
-            <span>Python &amp; AI</span>
-          </div>
-          <div class="absolute -bottom-2 -left-2 bg-slate-900/95 border border-slate-700 rounded-2xl px-3 py-2 shadow-xl flex items-center gap-2 text-xs font-mono text-teal-300">
-            <i class="fas fa-microchip text-teal-400 text-base"></i>
-            <span>ESP32 / IoT</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- INFINITE TECH STACK MARQUEE (MagicUI Style) -->
-  <div class="relative z-10 py-6 border-y border-slate-800/80 bg-slate-950/60 overflow-hidden">
-    <div class="flex whitespace-nowrap animate-marquee gap-8 items-center text-xs font-mono text-slate-400">
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-python text-sky-400"></i> Python 3.11+</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-bolt text-teal-400"></i> Django 6.0 &amp; FastAPI</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-js text-yellow-400"></i> TypeScript &amp; Next.js</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-microchip text-emerald-400"></i> ESP32 / NodeMCU ESP8266</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-robot text-purple-400"></i> Multi-Agent AI &amp; MCP</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-database text-blue-400"></i> PostgreSQL &amp; MySQL</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-code text-pink-400"></i> C / C++ / Java / 8086 ASM</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-docker text-sky-400"></i> Docker &amp; GitHub Actions</span>
-      <!-- Duplicate for seamless loop -->
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-python text-sky-400"></i> Python 3.11+</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-bolt text-teal-400"></i> Django 6.0 &amp; FastAPI</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-js text-yellow-400"></i> TypeScript &amp; Next.js</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-microchip text-emerald-400"></i> ESP32 / NodeMCU ESP8266</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-robot text-purple-400"></i> Multi-Agent AI &amp; MCP</span>
-      <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-database text-blue-400"></i> PostgreSQL &amp; MySQL</span>
-    </div>
-  </div>
-
-  <!-- BENTO GRID ARCHITECTURE SECTION (Aceternity / Linear Style) -->
-  <section id="about" class="relative z-10 py-24 px-6">
-    <div id="bento" class="max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-        <span class="font-mono text-xs uppercase tracking-widest text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">01 // Engineering DNA &amp; Bento Architecture</span>
-        <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">Full-Spectrum Builder</h2>
-        <p class="text-slate-400 mt-3 text-sm sm:text-base">Combining academic Computer Science rigor with production backend architecture, autonomous AI workflows, and hardware-level IoT control.</p>
-      </div>
-
-      <div class="grid md:grid-cols-12 gap-6">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Bento Card 1: Developer Bio & Philosophy (7 cols) -->
-        <div class="md:col-span-7 bento-card rounded-3xl p-8 flex flex-col justify-between reveal">
-          <div>
-            <div class="inline-flex items-center gap-2 text-xs font-mono text-sky-400 mb-3">
-              <i class="fas fa-user-astronaut"></i>
-              <span>ABOUT ME // UNIVERSITY STUDENT (CSE)</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-4">Bridging Software Architecture, AI Agents &amp; Physical Hardware</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4">
-              I am a <strong class="text-white">Software Engineering &amp; IoT Developer</strong> and a <strong class="text-sky-300">University Student</strong> majoring in Computer Science &amp; Engineering. My work spans designing normalized relational databases, writing clean Python/Django &amp; FastAPI backends, and programming deterministic finite-state machines on ESP32/ESP8266 microcontrollers.
-            </p>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Whether authoring formal Software Requirement Specifications (SRS), configuring multi-hop GraphRAG &amp; MCP agent pipelines, or soldering sensor arrays for autonomous search-and-rescue robotics, I focus on verifiable reliability and clean architecture.
-            </p>
+        <!-- Left Column: Hero Copy & Interactive Badges -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-sky-500/30 text-sky-400 text-xs font-mono">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-400"></span>
+            </span>
+            <span>Available for Software Engineering, AI &amp; IoT Collaborations</span>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 mt-6 border-t border-slate-800/80 text-xs font-mono">
-            <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
-              <div class="text-sky-400 font-bold">DSA &amp; Graph</div>
-              <div class="text-slate-500 text-[11px]">C++ / Python</div>
-            </div>
-            <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
-              <div class="text-teal-400 font-bold">System Design</div>
-              <div class="text-slate-500 text-[11px]">SRS • UML • ERD</div>
-            </div>
-            <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
-              <div class="text-purple-400 font-bold">AI &amp; RAG</div>
-              <div class="text-slate-500 text-[11px]">LangGraph • MCP</div>
-            </div>
-            <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
-              <div class="text-amber-400 font-bold">Embedded</div>
-              <div class="text-slate-500 text-[11px]">ESP32 • 8086 ASM</div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Bento Card 2: Visual Skill Icons Matrix (5 cols) -->
-        <div class="md:col-span-5 bento-card rounded-3xl p-8 flex flex-col justify-between reveal">
-          <div>
-            <div class="inline-flex items-center gap-2 text-xs font-mono text-teal-400 mb-3">
-              <i class="fas fa-layer-group"></i>
-              <span>TECH ARSENAL</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2">Languages, Frameworks &amp; DevOps</h3>
-            <p class="text-slate-400 text-xs mb-6">Production tools I use daily across web, AI, and embedded engineering:</p>
-            <div class="space-y-4">
-              <div>
-                <div class="text-[11px] font-mono text-slate-400 mb-2">CORE LANGUAGES</div>
-                <img src="https://skillicons.dev/icons?i=py,cpp,c,java,ts,js,bash,html,css&theme=dark" alt="Languages" class="h-9" />
-              </div>
-              <div>
-                <div class="text-[11px] font-mono text-slate-400 mb-2">FRAMEWORKS &amp; DATABASES</div>
-                <img src="https://skillicons.dev/icons?i=django,fastapi,react,nextjs,nodejs,tailwind,postgres,mysql,sqlite&theme=dark" alt="Frameworks" class="h-9" />
-              </div>
-              <div>
-                <div class="text-[11px] font-mono text-slate-400 mb-2">IOT, CLOUD &amp; TOOLS</div>
-                <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,git,github,githubactions,docker,linux,vscode,postman&theme=dark" alt="Tools" class="h-9" />
-              </div>
-            </div>
-          </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
-            <span> computational-thinking: <strong class="text-teal-400">CT Mode Ready</strong></span>
-            <i class="fas fa-check-circle text-teal-400"></i>
-          </div>
-        </div>
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.08] text-white">
+            Engineering <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-300 to-indigo-400">
+              Intelligent Systems
+            </span>
+            &amp; Edge IoT.
+          </h1>
 
-        <!-- Bento Card 3: Autonomous AI Ecosystem (4 cols) -->
-        <div class="md:col-span-4 bento-card rounded-3xl p-7 reveal">
-          <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-4">
-            <i class="fas fa-brain text-lg"></i>
+          <!-- Dynamic Typewriter Line -->
+          <div class="h-8 flex items-center justify-center lg:justify-start font-mono text-sm sm:text-base text-slate-300">
+            <span class="text-sky-400 mr-2">&gt;</span>
+            <span id="typewriter-text" class="font-semibold text-teal-300">Software Engineering &amp; IoT Developer</span>
+            <span class="w-2 h-5 bg-sky-400 ml-1 animate-pulse inline-block"></span>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">Autonomous AI &amp; MCP Orchestration</h3>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">
-            Architected a 91-skill multi-agent ecosystem integrating Second-Brain Knowledge Graphs, Playwright browser automation, and deterministic code verification gates.
+
+          <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Hi, I'm <strong class="text-white font-semibold">Sabbir Hossain</strong> — a <strong class="text-sky-300 font-medium">Software Engineering &amp; IoT Developer</strong> and <strong class="text-teal-300 font-medium">University Student</strong> majoring in Computer Science &amp; Engineering (CSE). I architect full-stack web applications, multi-agent AI ecosystems, and real-time microcontroller firmware.
           </p>
-          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-purple-300">
-            <span class="px-2.5 py-1 rounded-md bg-purple-950/50 border border-purple-800/50">LangGraph</span>
-            <span class="px-2.5 py-1 rounded-md bg-purple-950/50 border border-purple-800/50">MCP</span>
-            <span class="px-2.5 py-1 rounded-md bg-purple-950/50 border border-purple-800/50">Playwright</span>
+
+          <!-- Primary Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <a href="#projects" aria-label="Explore Featured Projects" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 font-bold text-sm hover:scale-[1.02] transition shadow-xl shadow-sky-500/20 flex items-center gap-2">
+              <i class="fas fa-rocket"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#terminal-section" aria-label="Launch Live Interactive CLI Terminal" class="px-6 py-3.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-slate-200 font-semibold text-sm hover:border-sky-400/50 hover:text-sky-300 transition flex items-center gap-2">
+              <i class="fas fa-terminal text-sky-400"></i>
+              <span>Launch Live Terminal</span>
+            </a>
+            <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" aria-label="GitHub @sabbirhossain-git" class="px-5 py-3.5 rounded-xl bg-slate-900/60 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition text-sm flex items-center gap-2">
+              <i class="fab fa-github text-base"></i>
+              <span>@sabbirhossain-git</span>
+            </a>
+          </div>
+
+          <!-- Quick Engineering Telemetry Pills -->
+          <div class="pt-4 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0">
+            <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-3 text-left">
+              <div class="text-xl sm:text-2xl font-black text-white font-mono">91+</div>
+              <div class="text-[11px] text-slate-400">Autonomous AI Skills</div>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-3 text-left">
+              <div class="text-xl sm:text-2xl font-black text-sky-400 font-mono">Full-Stack</div>
+              <div class="text-[11px] text-slate-400">Django • FastAPI • Next.js</div>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-3 text-left">
+              <div class="text-xl sm:text-2xl font-black text-teal-400 font-mono">Edge IoT</div>
+              <div class="text-[11px] text-slate-400">ESP32 • ESP8266 • C++</div>
+            </div>
           </div>
         </div>
 
-        <!-- Bento Card 4: Embedded Robotics & Optical Sensing (4 cols) -->
-        <div class="md:col-span-4 bento-card rounded-3xl p-7 reveal">
-          <div class="w-10 h-10 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-400 mb-4">
-            <i class="fas fa-satellite-dish text-lg"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">IoT Robotics &amp; LiDAR Signal Research</h3>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">
-            Designing NodeMCU ESP8266 &amp; ESP32 firmware with multi-sensor hazard fusion (MQ-2, PIR), motor failsafes, and deep-learning ToF/FMCW LiDAR co-simulation.
-          </p>
-          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-teal-300">
-            <span class="px-2.5 py-1 rounded-md bg-teal-950/50 border border-teal-800/50">ESP8266/ESP32</span>
-            <span class="px-2.5 py-1 rounded-md bg-teal-950/50 border border-teal-800/50">FSM Control</span>
-            <span class="px-2.5 py-1 rounded-md bg-teal-950/50 border border-teal-800/50">PyTorch</span>
+        <!-- Right Column: 3D Avatar Portal with Sabbir's Real Photo from Google Drive -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 flex items-center justify-center animate-float">
+            <div class="absolute inset-0 rounded-full border-2 border-dashed border-sky-400/30 animate-spin-slow"></div>
+            <div class="absolute inset-4 rounded-full border border-teal-400/20"></div>
+            <div class="absolute inset-6 rounded-full bg-gradient-to-tr from-sky-500/25 via-teal-400/15 to-indigo-500/25 blur-2xl animate-pulse-glow"></div>
+
+            <!-- Portrait Container -->
+            <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden bg-gradient-to-b from-slate-800/80 to-slate-950 border-2 border-sky-400/40 shadow-2xl shadow-sky-500/20 group">
+              <img 
+                src="sabbir-avatar.png" 
+                width="320"
+                height="320"
+                fetchpriority="high"
+                onerror="this.onerror=null; this.src='https://github.com/sabbirhossain-git.png';"
+                alt="Sabbir Hossain — Software Engineering and IoT Developer" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
+              />
+              <div class="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md border border-slate-800 rounded-xl px-3.5 py-2 flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-bold text-white">Sabbir Hossain</div>
+                  <div class="text-[10px] font-mono text-sky-400">University Student • CSE</div>
+                </div>
+                <span class="px-2 py-0.5 rounded-md bg-teal-500/20 border border-teal-500/40 text-teal-300 font-mono text-[10px]">
+                  Verified
+                </span>
+              </div>
+            </div>
+
+            <!-- Floating Orbit Tech Badges -->
+            <div class="absolute -top-2 -right-2 bg-slate-900/95 border border-slate-700 rounded-2xl px-3 py-2 shadow-xl flex items-center gap-2 text-xs font-mono text-sky-300">
+              <i class="fab fa-python text-yellow-400 text-base"></i>
+              <span>Python &amp; AI</span>
+            </div>
+            <div class="absolute -bottom-2 -left-2 bg-slate-900/95 border border-slate-700 rounded-2xl px-3 py-2 shadow-xl flex items-center gap-2 text-xs font-mono text-teal-300">
+              <i class="fas fa-microchip text-teal-400 text-base"></i>
+              <span>ESP32 / IoT</span>
+            </div>
           </div>
         </div>
 
-        <!-- Bento Card 5: Backend & Database Systems (4 cols) -->
-        <div class="md:col-span-4 bento-card rounded-3xl p-7 reveal">
-          <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-4">
-            <i class="fas fa-server text-lg"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Scalable Backend &amp; Relational DBs</h3>
-          <p class="text-slate-400 text-xs leading-relaxed mb-4">
-            Building modular Django &amp; FastAPI web platforms, BCNF/3NF normalized SQL schemas, ACID transaction workflows, and role-based collaborative portals.
-          </p>
-          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-sky-300">
-            <span class="px-2.5 py-1 rounded-md bg-sky-950/50 border border-sky-800/50">Django 6.0</span>
-            <span class="px-2.5 py-1 rounded-md bg-sky-950/50 border border-sky-800/50">PostgreSQL</span>
-            <span class="px-2.5 py-1 rounded-md bg-sky-950/50 border border-sky-800/50">REST API</span>
-          </div>
-        </div>
+      </div>
+    </section>
 
+    <!-- INFINITE TECH STACK MARQUEE (MagicUI Style) -->
+    <div class="relative z-10 py-6 border-y border-slate-800/80 bg-slate-950/60 overflow-hidden" aria-label="Technology Marquee">
+      <div class="flex whitespace-nowrap animate-marquee gap-8 items-center text-xs font-mono text-slate-400">
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-python text-sky-400"></i> Python 3.11+</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-bolt text-teal-400"></i> Django 6.0 &amp; FastAPI</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-js text-yellow-400"></i> TypeScript &amp; Next.js</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-microchip text-emerald-400"></i> ESP32 / NodeMCU ESP8266</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-robot text-purple-400"></i> Multi-Agent AI &amp; MCP</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-database text-blue-400"></i> PostgreSQL &amp; MySQL</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-code text-pink-400"></i> C / C++ / Java / 8086 ASM</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-docker text-sky-400"></i> Docker &amp; GitHub Actions</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-python text-sky-400"></i> Python 3.11+</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-bolt text-teal-400"></i> Django 6.0 &amp; FastAPI</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fab fa-js text-yellow-400"></i> TypeScript &amp; Next.js</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-microchip text-emerald-400"></i> ESP32 / NodeMCU ESP8266</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-robot text-purple-400"></i> Multi-Agent AI &amp; MCP</span>
+        <span class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800"><i class="fas fa-database text-blue-400"></i> PostgreSQL &amp; MySQL</span>
       </div>
     </div>
-  </section>
 
-  <!-- FEATURED ENGINEERING PROJECTS SECTION -->
-  <section id="projects" class="relative z-10 py-24 px-6 bg-slate-950/40 border-t border-slate-800/60">
-    <div class="max-w-6xl mx-auto">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal">
-        <div>
-          <span class="font-mono text-xs uppercase tracking-widest text-teal-400 bg-teal-500/10 border border-teal-500/20 px-3 py-1 rounded-full">02 // Production &amp; Academic Builds</span>
-          <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">Featured Engineering Projects</h2>
+    <!-- BENTO GRID ARCHITECTURE SECTION -->
+    <section id="about" class="relative z-10 py-24 px-6">
+      <div id="bento" class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <span class="font-mono text-xs uppercase tracking-widest text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">01 // Engineering DNA &amp; Bento Architecture</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">Full-Spectrum Builder</h2>
+          <p class="text-slate-400 mt-3 text-sm sm:text-base">Combining academic Computer Science rigor with production backend architecture, autonomous AI workflows, and hardware-level IoT control.</p>
         </div>
-        <div class="flex gap-2 mt-4 md:mt-0 text-xs font-mono">
-          <button onclick="filterProjects('all')" class="proj-filter active px-3.5 py-2 rounded-xl bg-sky-500 text-slate-950 font-bold transition" data-filter="all">All (5)</button>
-          <button onclick="filterProjects('web')" class="proj-filter px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-sky-400 transition" data-filter="web">Full-Stack</button>
-          <button onclick="filterProjects('iot')" class="proj-filter px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-sky-400 transition" data-filter="iot">IoT &amp; Hardware</button>
-          <button onclick="filterProjects('ai')" class="proj-filter px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-sky-400 transition" data-filter="ai">AI &amp; Systems</button>
+
+        <div class="grid md:grid-cols-12 gap-6">
+          
+          <!-- Bento Card 1: Developer Bio & Philosophy (7 cols) -->
+          <div class="md:col-span-7 bento-card rounded-3xl p-8 flex flex-col justify-between reveal">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs font-mono text-sky-400 mb-3">
+                <i class="fas fa-user-astronaut"></i>
+                <span>ABOUT ME // UNIVERSITY STUDENT (CSE)</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-4">Bridging Software Architecture, AI Agents &amp; Physical Hardware</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                I am a <strong class="text-white">Software Engineering &amp; IoT Developer</strong> and a <strong class="text-sky-300">University Student</strong> majoring in Computer Science &amp; Engineering. My work spans designing normalized relational databases, writing clean Python/Django &amp; FastAPI backends, and programming deterministic finite-state machines on ESP32/ESP8266 microcontrollers.
+              </p>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Whether authoring formal Software Requirement Specifications (SRS), configuring multi-hop GraphRAG &amp; MCP agent pipelines, or soldering sensor arrays for autonomous search-and-rescue robotics, I focus on verifiable reliability and clean architecture.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 mt-6 border-t border-slate-800/80 text-xs font-mono">
+              <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+                <div class="text-sky-400 font-bold">DSA &amp; Graph</div>
+                <div class="text-slate-500 text-[11px]">C++ / Python</div>
+              </div>
+              <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+                <div class="text-teal-400 font-bold">System Design</div>
+                <div class="text-slate-500 text-[11px]">SRS • UML • ERD</div>
+              </div>
+              <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+                <div class="text-purple-400 font-bold">AI &amp; RAG</div>
+                <div class="text-slate-500 text-[11px]">LangGraph • MCP</div>
+              </div>
+              <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+                <div class="text-amber-400 font-bold">Embedded</div>
+                <div class="text-slate-500 text-[11px]">ESP32 • 8086 ASM</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 2: Visual Skill Icons Matrix (5 cols) -->
+          <div class="md:col-span-5 bento-card rounded-3xl p-8 flex flex-col justify-between reveal">
+            <div>
+              <div class="inline-flex items-center gap-2 text-xs font-mono text-teal-400 mb-3">
+                <i class="fas fa-layer-group"></i>
+                <span>TECH ARSENAL</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Languages, Frameworks &amp; DevOps</h3>
+              <p class="text-slate-400 text-xs mb-6">Production tools I use daily across web, AI, and embedded engineering:</p>
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[11px] font-mono text-slate-400 mb-2">CORE LANGUAGES</div>
+                  <img src="https://skillicons.dev/icons?i=py,cpp,c,java,ts,js,bash,html,css&theme=dark" loading="lazy" alt="Core Programming Languages" class="h-9" />
+                </div>
+                <div>
+                  <div class="text-[11px] font-mono text-slate-400 mb-2">FRAMEWORKS &amp; DATABASES</div>
+                  <img src="https://skillicons.dev/icons?i=django,fastapi,react,nextjs,nodejs,tailwind,postgres,mysql,sqlite&theme=dark" loading="lazy" alt="Frameworks and Databases" class="h-9" />
+                </div>
+                <div>
+                  <div class="text-[11px] font-mono text-slate-400 mb-2">IOT, CLOUD &amp; TOOLS</div>
+                  <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,git,github,githubactions,docker,linux,vscode,postman&theme=dark" loading="lazy" alt="IoT and DevOps Tools" class="h-9" />
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+              <span>computational-thinking: <strong class="text-teal-400">CT Mode Ready</strong></span>
+              <i class="fas fa-check-circle text-teal-400"></i>
+            </div>
+          </div>
+
+          <!-- Bento Card 3: Autonomous AI Ecosystem (4 cols) -->
+          <div class="md:col-span-4 bento-card rounded-3xl p-7 reveal">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-4">
+              <i class="fas fa-brain text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Autonomous AI &amp; MCP Orchestration</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Architected a 91-skill multi-agent ecosystem integrating Second-Brain Knowledge Graphs, Playwright browser automation, and deterministic code verification gates.
+            </p>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-purple-300">
+              <span class="px-2.5 py-1 rounded-md bg-purple-950/50 border border-purple-800/50">LangGraph</span>
+              <span class="px-2.5 py-1 rounded-md bg-purple-950/50 border border-purple-800/50">MCP</span>
+              <span class="px-2.5 py-1 rounded-md bg-purple-950/50 border border-purple-800/50">Playwright</span>
+            </div>
+          </div>
+
+          <!-- Bento Card 4: Embedded Robotics & Optical Sensing (4 cols) -->
+          <div class="md:col-span-4 bento-card rounded-3xl p-7 reveal">
+            <div class="w-10 h-10 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-400 mb-4">
+              <i class="fas fa-satellite-dish text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">IoT Robotics &amp; LiDAR Signal Research</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Designing NodeMCU ESP8266 &amp; ESP32 firmware with multi-sensor hazard fusion (MQ-2, PIR), motor failsafes, and deep-learning ToF/FMCW LiDAR co-simulation.
+            </p>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-teal-300">
+              <span class="px-2.5 py-1 rounded-md bg-teal-950/50 border border-teal-800/50">ESP8266/ESP32</span>
+              <span class="px-2.5 py-1 rounded-md bg-teal-950/50 border border-teal-800/50">FSM Control</span>
+              <span class="px-2.5 py-1 rounded-md bg-teal-950/50 border border-teal-800/50">PyTorch</span>
+            </div>
+          </div>
+
+          <!-- Bento Card 5: Backend & Database Systems (4 cols) -->
+          <div class="md:col-span-4 bento-card rounded-3xl p-7 reveal">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-4">
+              <i class="fas fa-server text-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Scalable Backend &amp; Relational DBs</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Building modular Django &amp; FastAPI web platforms, BCNF/3NF normalized SQL schemas, ACID transaction workflows, and role-based collaborative portals.
+            </p>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-sky-300">
+              <span class="px-2.5 py-1 rounded-md bg-sky-950/50 border border-sky-800/50">Django 6.0</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-950/50 border border-sky-800/50">PostgreSQL</span>
+              <span class="px-2.5 py-1 rounded-md bg-sky-950/50 border border-sky-800/50">REST API</span>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div id="projects-grid" class="grid md:grid-cols-2 gap-7">
-
-        <!-- Project 1: IoT Search & Rescue Robot -->
-        <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="iot">
+    <!-- FEATURED ENGINEERING PROJECTS SECTION -->
+    <section id="projects" class="relative z-10 py-24 px-6 bg-slate-950/40 border-t border-slate-800/60">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-teal-500/15 text-teal-300 border border-teal-500/30">
-                <i class="fas fa-robot mr-1"></i> Embedded IoT &amp; Robotics
-              </span>
-              <span class="text-xs font-mono text-slate-400">NodeMCU ESP8266 • C++</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-3">IoT Smart Reconnaissance Search &amp; Rescue Robot</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Engineered a Wi-Fi teleoperated reconnaissance rover powered by NodeMCU ESP8266 V2 with onboard multi-hazard gas/smoke sensing (MQ-2) and thermal human-presence detection (HC-SR501 PIR). Implemented a deterministic on-device Finite State Machine (FSM) with 3 priority audio-visual Morse/siren alarm signatures and an automatic L293D motor-stop failsafe.
-            </p>
+            <span class="font-mono text-xs uppercase tracking-widest text-teal-400 bg-teal-500/10 border border-teal-500/20 px-3 py-1 rounded-full">02 // Production &amp; Academic Builds</span>
+            <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">Featured Engineering Projects</h2>
           </div>
-          <div>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">ESP8266 V2</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">MQ-2 Gas Sensor</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">HC-SR501 PIR</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">L293D Failsafe</span>
-            </div>
-            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
-              <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
-                <i class="fab fa-github"></i> Hardware Architecture &amp; Specs <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-              </a>
-              <span class="text-emerald-400 font-mono text-[11px]">● Verified Prototype</span>
-            </div>
+          <div class="flex gap-2 mt-4 md:mt-0 text-xs font-mono" role="tablist" aria-label="Filter projects by category">
+            <button onclick="filterProjects('all')" aria-label="Show All Projects" class="proj-filter active px-3.5 py-2 rounded-xl bg-sky-500 text-slate-950 font-bold transition" data-filter="all">All (4)</button>
+            <button onclick="filterProjects('web')" aria-label="Show Full-Stack Web Projects" class="proj-filter px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-sky-400 transition" data-filter="web">Full-Stack</button>
+            <button onclick="filterProjects('iot')" aria-label="Show IoT and Hardware Projects" class="proj-filter px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-sky-400 transition" data-filter="iot">IoT &amp; Hardware</button>
+            <button onclick="filterProjects('ai')" aria-label="Show AI and Multi-Agent Systems" class="proj-filter px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:border-sky-400 transition" data-filter="ai">AI &amp; Systems</button>
           </div>
         </div>
 
-        <!-- Project 2: Panic-Planner (Django 6.0) -->
-        <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="web">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-sky-500/15 text-sky-300 border border-sky-500/30">
-                <i class="fas fa-layer-group mr-1"></i> Full-Stack Web App
-              </span>
-              <span class="text-xs font-mono text-slate-400">Python • Django 6.0</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-3">Panic-Planner — Smart Academic &amp; Study Resource Hub</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              A collaborative full-stack study planner designed to reduce student cognitive load through algorithmic schedule management, Pomodoro tracking, and subject-wise progress dashboards. Architected and built the dedicated <strong>Resources Module</strong> with custom Django ORM models, emergency/study categorization, and responsive templates.
-            </p>
-          </div>
-          <div>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Python 3</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Django 6.0.5</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">SQLite / SQL</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">HTML5 &amp; Tailwind</span>
-            </div>
-            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
-              <a href="https://github.com/ZarinSultana/Panic-Planner" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
-                <i class="fab fa-github"></i> View GitHub Repository <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-              </a>
-              <span class="text-sky-400 font-mono text-[11px]">● Resources Module Lead</span>
-            </div>
-          </div>
-        </div>
+        <div id="projects-grid" class="grid md:grid-cols-2 gap-7">
 
-        <!-- Project 3: Autonomous AI Agent & 91-Skill Ecosystem -->
-        <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="ai">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-purple-500/15 text-purple-300 border border-purple-500/30">
-                <i class="fas fa-microchip mr-1"></i> Multi-Agent AI OS
-              </span>
-              <span class="text-xs font-mono text-slate-400">Python • Node.js • MCP</span>
+          <!-- Project 1: IoT Search & Rescue Robot -->
+          <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="iot">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-teal-500/15 text-teal-300 border border-teal-500/30">
+                  <i class="fas fa-robot mr-1"></i> Embedded IoT &amp; Robotics
+                </span>
+                <span class="text-xs font-mono text-slate-400">NodeMCU ESP8266 • C++</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">IoT Smart Reconnaissance Search &amp; Rescue Robot</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Engineered a Wi-Fi teleoperated reconnaissance rover powered by NodeMCU ESP8266 V2 with onboard multi-hazard gas/smoke sensing (MQ-2) and thermal human-presence detection (HC-SR501 PIR). Implemented a deterministic on-device Finite State Machine (FSM) with 3 priority audio-visual Morse/siren alarm signatures and an automatic L293D motor-stop failsafe.
+              </p>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-3">Autonomous Multi-Agent Second-Brain &amp; Skill OS</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Engineered a self-evolving personal AI agent architecture orchestrating 91 specialized engineering skills, bidirectional Second-Brain knowledge synchronization, automated academic deadline &amp; mobile calendar alarms, and risk-tiered governance gates with 18/18 passing automated acceptance tests.
-            </p>
+            <div>
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">ESP8266 V2</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">MQ-2 Gas Sensor</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">HC-SR501 PIR</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">L293D Failsafe</span>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
+                <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
+                  <i class="fab fa-github"></i> Hardware Architecture &amp; Specs <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <span class="text-emerald-400 font-mono text-[11px]">● Verified Prototype</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Multi-Agent SDK</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Apps Script API</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">n8n Workflows</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Playwright MCP</span>
-            </div>
-            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
-              <a href="https://github.com/sabbirhossain-git/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
-                <i class="fab fa-github"></i> View Profile Architecture <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-              </a>
-              <span class="text-purple-400 font-mono text-[11px]">● 18/18 Tests Passing</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Project 4: SkillBridge & Electronic Toll Management System -->
-        <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="web">
-          <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-amber-500/15 text-amber-300 border border-amber-500/30">
-                <i class="fas fa-sitemap mr-1"></i> System Architecture &amp; DBMS
-              </span>
-              <span class="text-xs font-mono text-slate-400">Java • MySQL • SRS</span>
+          <!-- Project 2: Panic-Planner (Django 6.0) -->
+          <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="web">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-sky-500/15 text-sky-300 border border-sky-500/30">
+                  <i class="fas fa-layer-group mr-1"></i> Full-Stack Web App
+                </span>
+                <span class="text-xs font-mono text-slate-400">Python • Django 6.0</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">Panic-Planner — Smart Academic &amp; Study Resource Hub</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                A collaborative full-stack study planner designed to reduce student cognitive load through algorithmic schedule management, Pomodoro tracking, and subject-wise progress dashboards. Architected and built the dedicated <strong>Resources Module</strong> with custom Django ORM models, emergency/study categorization, and responsive templates.
+              </p>
             </div>
-            <h3 class="text-2xl font-bold text-white mb-3">SkillBridge SRS &amp; Electronic Toll Management (TMS)</h3>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Authored the complete IEEE-standard Software Requirements Specification (SRS), UML activity flows, and escrow milestone architecture for <strong>SkillBridge</strong>, alongside engineering a relational database-driven <strong>Electronic Toll Management System (TMS)</strong> in Java &amp; SQL for automated vehicle classification and receipt auditing.
-            </p>
+            <div>
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Python 3</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Django 6.0.5</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">SQLite / SQL</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">HTML5 &amp; Tailwind</span>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
+                <a href="https://github.com/ZarinSultana/Panic-Planner" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
+                  <i class="fab fa-github"></i> View GitHub Repository <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <span class="text-sky-400 font-mono text-[11px]">● Resources Module Lead</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Java</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">MySQL / ERD</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">IEEE SRS</span>
-              <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">UML Modeling</span>
-            </div>
-            <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
-              <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
-                <i class="fab fa-github"></i> Explore Documentation <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
-              </a>
-              <span class="text-amber-400 font-mono text-[11px]">● Lead System Analyst</span>
-            </div>
-          </div>
-        </div>
 
+          <!-- Project 3: Autonomous AI Agent & 91-Skill Ecosystem -->
+          <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="ai">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                  <i class="fas fa-microchip mr-1"></i> Multi-Agent AI OS
+                </span>
+                <span class="text-xs font-mono text-slate-400">Python • Node.js • MCP</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">Autonomous Multi-Agent Second-Brain &amp; Skill OS</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Engineered a self-evolving personal AI agent architecture orchestrating 91 specialized engineering skills, bidirectional Second-Brain knowledge synchronization, automated academic deadline &amp; mobile calendar alarms, and risk-tiered governance gates with 18/18 passing automated acceptance tests.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Multi-Agent SDK</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Apps Script API</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">n8n Workflows</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Playwright MCP</span>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
+                <a href="https://github.com/sabbirhossain-git/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
+                  <i class="fab fa-github"></i> View Profile Architecture <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <span class="text-purple-400 font-mono text-[11px]">● 18/18 Tests Passing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SkillBridge & Electronic Toll Management System -->
+          <div class="project-card bento-card rounded-3xl p-8 flex flex-col justify-between reveal" data-category="web">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                  <i class="fas fa-sitemap mr-1"></i> System Architecture &amp; DBMS
+                </span>
+                <span class="text-xs font-mono text-slate-400">Java • MySQL • SRS</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">SkillBridge SRS &amp; Electronic Toll Management (TMS)</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Authored the complete IEEE-standard Software Requirements Specification (SRS), UML activity flows, and escrow milestone architecture for <strong>SkillBridge</strong>, alongside engineering a relational database-driven <strong>Electronic Toll Management System (TMS)</strong> in Java &amp; SQL for automated vehicle classification and receipt auditing.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300 mb-6">
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">Java</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">MySQL / ERD</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">IEEE SRS</span>
+                <span class="px-2.5 py-1 bg-slate-900 rounded-lg border border-slate-800">UML Modeling</span>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
+                <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 flex items-center gap-1.5">
+                  <i class="fab fa-github"></i> Explore Documentation <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+                <span class="text-amber-400 font-mono text-[11px]">● Lead System Analyst</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- INTERACTIVE DEVELOPER TERMINAL SECTION -->
-  <section id="terminal-section" class="relative z-10 py-24 px-6 border-t border-slate-800/60">
-    <div class="max-w-4xl mx-auto reveal">
-      <div class="text-center mb-10">
-        <span class="font-mono text-xs uppercase tracking-widest text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">03 // Interactive CLI</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-4">Query Sabbir's Live Terminal</h2>
-        <p class="text-slate-400 text-sm mt-2">Click a command pill or type <code class="text-sky-400 font-mono">help</code>, <code class="text-sky-400 font-mono">skills</code>, <code class="text-sky-400 font-mono">projects</code>, <code class="text-sky-400 font-mono">iot</code>, or <code class="text-sky-400 font-mono">contact</code> below.</p>
-      </div>
-
-      <!-- Quick Command Buttons -->
-      <div class="flex flex-wrap justify-center gap-2 mb-4 font-mono text-xs">
-        <button onclick="runTerminalCmd('whoami')" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-sky-400 hover:bg-slate-800 transition">$ whoami</button>
-        <button onclick="runTerminalCmd('skills')" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-teal-400 hover:bg-slate-800 transition">$ sabbir --skills</button>
-        <button onclick="runTerminalCmd('projects')" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-purple-400 hover:bg-slate-800 transition">$ sabbir --projects</button>
-        <button onclick="runTerminalCmd('iot')" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-amber-400 hover:bg-slate-800 transition">$ sabbir --iot-status</button>
-        <button onclick="runTerminalCmd('contact')" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-emerald-400 hover:bg-slate-800 transition">$ sabbir --contact</button>
-        <button onclick="runTerminalCmd('clear')" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:bg-slate-800 transition">clear</button>
-      </div>
-
-      <!-- macOS Window Frame -->
-      <div class="rounded-2xl overflow-hidden bg-slate-950/95 border border-slate-800 shadow-2xl shadow-sky-500/10 font-mono text-sm">
-        <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <span class="w-3 h-3 rounded-full bg-rose-500"></span>
-            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
-            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-          </div>
-          <div class="text-xs text-slate-400">sabbir@macbook-pro: ~/portfolio (zsh)</div>
-          <div class="text-[11px] text-sky-400">v3.0.0</div>
+    <!-- INTERACTIVE DEVELOPER TERMINAL SECTION -->
+    <section id="terminal-section" class="relative z-10 py-24 px-6 border-t border-slate-800/60">
+      <div class="max-w-4xl mx-auto reveal">
+        <div class="text-center mb-10">
+          <span class="font-mono text-xs uppercase tracking-widest text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">03 // Interactive CLI</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white mt-4">Query Sabbir's Live Terminal</h2>
+          <p class="text-slate-400 text-sm mt-2">Click a command pill or type <code class="text-sky-400 font-mono">help</code>, <code class="text-sky-400 font-mono">skills</code>, <code class="text-sky-400 font-mono">projects</code>, <code class="text-sky-400 font-mono">iot</code>, or <code class="text-sky-400 font-mono">contact</code> below.</p>
         </div>
-        <div id="terminal-output" class="p-6 h-80 overflow-y-auto space-y-3 text-xs sm:text-sm text-slate-300">
-          <div class="text-slate-500"># Welcome to Sabbir Hossain's Interactive Engineering Shell. Type 'help' or click a command above.</div>
-          <div><span class="text-teal-400">sabbir@os</span>:<span class="text-sky-400">~</span>$ whoami</div>
-          <div class="pl-3 border-l-2 border-sky-500/40 text-slate-200">
-            <strong>Sabbir Hossain</strong> — Software Engineering &amp; IoT Developer | University Student (CSE)<br/>
-            Focus: Python/Django, FastAPI, Next.js, Autonomous Multi-Agent AI, &amp; ESP32/ESP8266 Robotics.
+
+        <!-- Quick Command Buttons -->
+        <div class="flex flex-wrap justify-center gap-2 mb-4 font-mono text-xs">
+          <button onclick="runTerminalCmd('whoami')" aria-label="Run whoami command" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-sky-400 hover:bg-slate-800 transition">$ whoami</button>
+          <button onclick="runTerminalCmd('skills')" aria-label="Run skills command" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-teal-400 hover:bg-slate-800 transition">$ sabbir --skills</button>
+          <button onclick="runTerminalCmd('projects')" aria-label="Run projects command" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-purple-400 hover:bg-slate-800 transition">$ sabbir --projects</button>
+          <button onclick="runTerminalCmd('iot')" aria-label="Run iot-status command" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-amber-400 hover:bg-slate-800 transition">$ sabbir --iot-status</button>
+          <button onclick="runTerminalCmd('contact')" aria-label="Run contact command" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-emerald-400 hover:bg-slate-800 transition">$ sabbir --contact</button>
+          <button onclick="runTerminalCmd('clear')" aria-label="Clear terminal output" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:bg-slate-800 transition">clear</button>
+        </div>
+
+        <!-- macOS Window Frame -->
+        <div class="rounded-2xl overflow-hidden bg-slate-950/95 border border-slate-800 shadow-2xl shadow-sky-500/10 font-mono text-sm">
+          <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+            </div>
+            <div class="text-xs text-slate-400">sabbir@macbook-pro: ~/portfolio (zsh)</div>
+            <div class="text-[11px] text-sky-400">v3.1.0</div>
+          </div>
+          <div id="terminal-output" role="log" aria-live="polite" class="p-6 h-80 overflow-y-auto space-y-3 text-xs sm:text-sm text-slate-300">
+            <div class="text-slate-500"># Welcome to Sabbir Hossain's Interactive Engineering Shell. Type 'help' or click a command above.</div>
+            <div><span class="text-teal-400">sabbir@os</span>:<span class="text-sky-400">~</span>$ whoami</div>
+            <div class="pl-3 border-l-2 border-sky-500/40 text-slate-200">
+              <strong>Sabbir Hossain</strong> — Software Engineering &amp; IoT Developer | University Student (CSE)<br/>
+              Focus: Python/Django, FastAPI, Next.js, Autonomous Multi-Agent AI, &amp; ESP32/ESP8266 Robotics.
+            </div>
+          </div>
+          <div class="px-6 py-3.5 bg-slate-900/60 border-t border-slate-800/80 flex items-center gap-2">
+            <label for="terminal-input" class="text-teal-400 font-bold">sabbir@os:~$</label>
+            <input 
+              id="terminal-input" 
+              type="text" 
+              aria-label="Terminal command input"
+              placeholder="Type a command (help, skills, projects, iot, contact, clear)..." 
+              class="w-full bg-transparent text-white focus:outline-none text-xs sm:text-sm"
+              onkeydown="if(event.key==='Enter'){runTerminalCmd(this.value); this.value='';}"
+            />
           </div>
         </div>
-        <div class="px-6 py-3.5 bg-slate-900/60 border-t border-slate-800/80 flex items-center gap-2">
-          <span class="text-teal-400 font-bold">sabbir@os:~$</span>
-          <input 
-            id="terminal-input" 
-            type="text" 
-            placeholder="Type a command (help, skills, projects, iot, contact, clear)..." 
-            class="w-full bg-transparent text-white focus:outline-none text-xs sm:text-sm"
-            onkeydown="if(event.key==='Enter'){runTerminalCmd(this.value); this.value='';}"
+      </div>
+    </section>
+
+    <!-- LIVE GITHUB ANALYTICS & SNAKE GRAPH SECTION -->
+    <section id="stats" class="relative z-10 py-24 px-6 bg-slate-950/50 border-t border-slate-800/60">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="font-mono text-xs uppercase tracking-widest text-teal-400 bg-teal-500/10 border border-teal-500/20 px-3 py-1 rounded-full">04 // Live Open-Source Telemetry</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">GitHub Activity &amp; Metrics</h2>
+          <p class="text-slate-400 mt-2 text-sm">Real-time commit statistics, language distribution, and automated contribution snake synced with <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="text-sky-400 underline">@sabbirhossain-git</a>.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bento-card rounded-3xl p-4 flex items-center justify-center">
+            <img class="w-full max-w-md" loading="lazy" src="https://github-readme-stats.vercel.app/api?username=sabbirhossain-git&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=38BDF8&icon_color=2DD4BF&text_color=E2E8F0" alt="Sabbir Hossain GitHub Stats" />
+          </div>
+          <div class="bento-card rounded-3xl p-4 flex items-center justify-center">
+            <img class="w-full max-w-md" loading="lazy" src="https://streak-stats.demolab.com?user=sabbirhossain-git&theme=tokyonight&hide_border=true&background=00000000&ring=38BDF8&fire=2DD4BF&currStreakLabel=38BDF8" alt="Sabbir Hossain GitHub Streak" />
+          </div>
+        </div>
+
+        <!-- Contribution Snake Card -->
+        <div class="bento-card rounded-3xl p-6 text-center">
+          <div class="text-xs font-mono text-sky-400 mb-3">AUTOMATED GITHUB ACTIONS CONTRIBUTION SNAKE</div>
+          <img 
+            class="mx-auto w-full max-w-4xl" 
+            loading="lazy"
+            src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/output/github-contribution-grid-snake-dark.svg" 
+            onerror="this.onerror=null; this.src='https://github-readme-activity-graph.vercel.app/graph?username=sabbirhossain-git&bg_color=0D1117&color=38BDF8&line=2DD4BF&point=FFFFFF&area=true&hide_border=true';"
+            alt="GitHub Contribution Snake Animation" 
           />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- LIVE GITHUB ANALYTICS & SNAKE GRAPH SECTION -->
-  <section id="stats" class="relative z-10 py-24 px-6 bg-slate-950/50 border-t border-slate-800/60">
-    <div class="max-w-6xl mx-auto reveal">
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="font-mono text-xs uppercase tracking-widest text-teal-400 bg-teal-500/10 border border-teal-500/20 px-3 py-1 rounded-full">04 // Live Open-Source Telemetry</span>
-        <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">GitHub Activity &amp; Metrics</h2>
-        <p class="text-slate-400 mt-2 text-sm">Real-time commit statistics, language distribution, and automated contribution snake synced with <a href="https://github.com/sabbirhossain-git" target="_blank" class="text-sky-400 underline">@sabbirhossain-git</a>.</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bento-card rounded-3xl p-4 flex items-center justify-center">
-          <img class="w-full max-w-md" src="https://github-readme-stats.vercel.app/api?username=sabbirhossain-git&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=38BDF8&icon_color=2DD4BF&text_color=E2E8F0" alt="GitHub Stats" />
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="relative z-10 py-24 px-6 border-t border-slate-800/60">
+      <div class="max-w-4xl mx-auto bento-card rounded-3xl p-10 sm:p-14 text-center reveal">
+        <span class="font-mono text-xs uppercase tracking-widest text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">05 // Initiate Connection</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 mb-4">Let's Build Something Exceptional</h2>
+        <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
+          Currently open for software engineering opportunities, open-source collaborations, full-stack web builds, and embedded IoT research projects.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="mailto:sabbirhossain50000@gmail.com" aria-label="Email Sabbir Hossain" class="px-8 py-4 rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 font-bold text-sm hover:opacity-95 transition shadow-xl shadow-sky-500/20 flex items-center gap-2">
+            <i class="fas fa-envelope"></i>
+            <span>sabbirhossain50000@gmail.com</span>
+          </a>
+          <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" aria-label="Follow Sabbir Hossain on GitHub" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-700 text-white font-semibold text-sm hover:border-sky-400 transition flex items-center gap-2">
+            <i class="fab fa-github"></i>
+            <span>github.com/sabbirhossain-git</span>
+          </a>
         </div>
-        <div class="bento-card rounded-3xl p-4 flex items-center justify-center">
-          <img class="w-full max-w-md" src="https://streak-stats.demolab.com?user=sabbirhossain-git&theme=tokyonight&hide_border=true&background=00000000&ring=38BDF8&fire=2DD4BF&currStreakLabel=38BDF8" alt="GitHub Streak" />
-        </div>
       </div>
-
-      <!-- Contribution Snake Card -->
-      <div class="bento-card rounded-3xl p-6 text-center">
-        <div class="text-xs font-mono text-sky-400 mb-3">AUTOMATED GITHUB ACTIONS CONTRIBUTION SNAKE</div>
-        <img 
-          class="mx-auto w-full max-w-4xl" 
-          src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/output/github-contribution-grid-snake-dark.svg" 
-          onerror="this.onerror=null; this.src='https://github-readme-activity-graph.vercel.app/graph?username=sabbirhossain-git&bg_color=0D1117&color=38BDF8&line=2DD4BF&point=FFFFFF&area=true&hide_border=true';"
-          alt="Contribution Graph" 
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="relative z-10 py-24 px-6 border-t border-slate-800/60">
-    <div class="max-w-4xl mx-auto bento-card rounded-3xl p-10 sm:p-14 text-center reveal">
-      <span class="font-mono text-xs uppercase tracking-widest text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">05 // Initiate Connection</span>
-      <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 mb-4">Let's Build Something Exceptional</h2>
-      <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed mb-8">
-        Currently open for software engineering opportunities, open-source collaborations, full-stack web builds, and embedded IoT research projects.
-      </p>
-      <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="mailto:sabbirhossain50000@gmail.com" class="px-8 py-4 rounded-xl bg-gradient-to-r from-sky-400 to-teal-400 text-slate-950 font-bold text-sm hover:opacity-95 transition shadow-xl shadow-sky-500/20 flex items-center gap-2">
-          <i class="fas fa-envelope"></i>
-          <span>sabbirhossain50000@gmail.com</span>
-        </a>
-        <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="px-8 py-4 rounded-xl bg-slate-900 border border-slate-700 text-white font-semibold text-sm hover:border-sky-400 transition flex items-center gap-2">
-          <i class="fab fa-github"></i>
-          <span>github.com/sabbirhossain-git</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="relative z-10 py-8 border-t border-slate-800/80 text-center text-xs text-slate-500 font-mono">
@@ -674,14 +724,14 @@
   </footer>
 
   <!-- COMMAND PALETTE MODAL (Cmd+K) -->
-  <div id="cmd-modal" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex items-start justify-center pt-24 px-4">
+  <div id="cmd-modal" role="dialog" aria-modal="true" aria-label="Quick Navigation Command Palette" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex items-start justify-center pt-24 px-4">
     <div class="w-full max-w-lg bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden">
       <div class="p-4 border-b border-slate-800 flex items-center justify-between">
         <div class="flex items-center gap-2 text-xs font-mono text-sky-400">
           <i class="fas fa-bolt"></i>
           <span>Quick Navigation &amp; Actions</span>
         </div>
-        <button onclick="toggleCmdPalette()" class="text-xs font-mono text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800">ESC</button>
+        <button onclick="toggleCmdPalette()" aria-label="Close Command Palette" class="text-xs font-mono text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800">ESC</button>
       </div>
       <div class="p-2 space-y-1 text-sm">
         <a href="#projects" onclick="toggleCmdPalette()" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-800 transition">
@@ -692,7 +742,7 @@
           <span class="flex items-center gap-3"><i class="fas fa-terminal text-teal-400"></i> Open Interactive CLI Terminal</span>
           <span class="text-xs font-mono text-slate-500">#terminal</span>
         </a>
-        <a href="https://github.com/sabbirhossain-git" target="_blank" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-800 transition">
+        <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-800 transition">
           <span class="flex items-center gap-3"><i class="fab fa-github text-purple-400"></i> Visit GitHub Profile (@sabbirhossain-git)</span>
           <span class="text-xs font-mono text-slate-500">External</span>
         </a>
@@ -760,7 +810,7 @@
       });
     }
 
-    // 4. Interactive CLI Terminal Engine
+    // 4. Interactive CLI Terminal Engine (XSS-safe command echo)
     const termOutput = document.getElementById('terminal-output');
     const commands = {
       help: `Available commands: <span class="text-sky-400">whoami</span>, <span class="text-teal-400">skills</span>, <span class="text-purple-400">projects</span>, <span class="text-amber-400">iot</span>, <span class="text-emerald-400">contact</span>, <span class="text-slate-400">clear</span>`,
@@ -768,8 +818,11 @@
       skills: `<strong>Languages:</strong> Python, C++, C, Java, TypeScript, JavaScript, SQL, Bash, 8086 Assembly<br/><strong>Frameworks:</strong> Django 6.0, FastAPI, Next.js, React, Tailwind CSS<br/><strong>AI &amp; IoT:</strong> Multi-Agent MCP, LangGraph, NodeMCU ESP8266, ESP32, Arduino`,
       projects: `1. <strong>IoT Search &amp; Rescue Robot</strong> (ESP8266 V2, MQ-2 Gas, PIR, Autonomous Motor Failsafe)<br/>2. <strong>Panic-Planner</strong> (Django 6.0 Collaborative Study &amp; Resources Platform)<br/>3. <strong>Autonomous 91-Skill AI OS</strong> (Multi-Account Second Brain &amp; Playwright Automation)<br/>4. <strong>SkillBridge SRS &amp; Electronic Toll Management System</strong> (Java, MySQL, IEEE SRS)`,
       iot: `[TELEMETRY ONLINE] NodeMCU ESP8266 V2 + ESP32 Cluster Ready.<br/>Sensors calibrated: MQ-2 Smoke/Gas, HC-SR501 Thermal PIR, L293D Dual H-Bridge Failsafe: ACTIVE.`,
-      contact: `Email: <a href="mailto:sabbirhossain50000@gmail.com" class="text-sky-400 underline">sabbirhossain50000@gmail.com</a> | GitHub: <a href="https://github.com/sabbirhossain-git" target="_blank" class="text-teal-400 underline">github.com/sabbirhossain-git</a>`
+      contact: `Email: <a href="mailto:sabbirhossain50000@gmail.com" class="text-sky-400 underline">sabbirhossain50000@gmail.com</a> | GitHub: <a href="https://github.com/sabbirhossain-git" target="_blank" rel="noopener" class="text-teal-400 underline">github.com/sabbirhossain-git</a>`
     };
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+    }
     function runTerminalCmd(raw) {
       const cmd = raw.trim().toLowerCase().replace(/^sabbir\s+--/, '').replace(/-status$/, '');
       if (!cmd) return;
@@ -777,10 +830,11 @@
         termOutput.innerHTML = '';
         return;
       }
-      const res = commands[cmd] || `Command not recognized: "${raw}". Type <span class="text-sky-400">help</span> for available commands.`;
+      const safeRaw = escapeHtml(raw);
+      const res = commands[cmd] || `Command not recognized: "${safeRaw}". Type <span class="text-sky-400">help</span> for available commands.`;
       const block = document.createElement('div');
       block.className = 'space-y-1';
-      block.innerHTML = `<div><span class="text-teal-400">sabbir@os</span>:<span class="text-sky-400">~</span>$ ${raw}</div><div class="pl-3 border-l-2 border-sky-500/40 text-slate-200">${res}</div>`;
+      block.innerHTML = `<div><span class="text-teal-400">sabbir@os</span>:<span class="text-sky-400">~</span>$ ${safeRaw}</div><div class="pl-3 border-l-2 border-sky-500/40 text-slate-200">${res}</div>`;
       termOutput.appendChild(block);
       termOutput.scrollTop = termOutput.scrollHeight;
     }
