@@ -4,23 +4,32 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sabbir%20Hossain&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Software%20Engineering%20%26%20IoT%20Developer%20%7C%20University%20Student&descAlignY=55&descSize=18" alt="Sabbir Hossain Banner" />
 
 <!-- Typing SVG Animation -->
-<a href="https://github.com/sabbirhossain-git">
+<a href="https://sabbirhossain-git.github.io/">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&lines=Software+Engineering+%26+IoT+Developer;University+Student+(Computer+Science+%26+Engineering);Autonomous+AI+Agents+%26+Multi-Agent+Systems;Full-Stack+Web+%26+Embedded+IoT+Systems;Open-Source+Builder+%26+Competitive+Problem+Solver" alt="Typing SVG" />
 </a>
 
-<!-- Profile Badges & Social Links -->
+<!-- Profile Badges & Direct Social / Contact Links -->
 <p align="center">
-  <a href="https://sabbirhossain-git.github.io/sabbirhossain-git/">
-    <img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Site-14B8A6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
+  <a href="https://sabbirhossain-git.github.io/">
+    <img src="https://img.shields.io/badge/🌐_Live_Portfolio-sabbirhossain--git.github.io-14B8A6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio" />
+  </a>
+  <a href="https://www.facebook.com/share/1JGr1sXEsS/">
+    <img src="https://img.shields.io/badge/Facebook-Sabbir_Hossain-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a href="https://www.instagram.com/s.a.b.b.i.r__h.o.s.s.a.i.n">
+    <img src="https://img.shields.io/badge/Instagram-@s.a.b.b.i.r____h.o.s.s.a.i.n-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="https://wa.me/8801307919989">
+    <img src="https://img.shields.io/badge/Phone_%2F_WhatsApp-%2B880_1307--919989-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone / WhatsApp" />
+  </a>
+  <a href="mailto:sabbirhossain50000@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-sabbirhossain50000%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   <a href="https://github.com/sabbirhossain-git?tab=followers">
     <img src="https://img.shields.io/github/followers/sabbirhossain-git?label=Followers&style=for-the-badge&color=0EA5E9&logo=github&logoColor=white" alt="GitHub Followers" />
   </a>
   <a href="https://github.com/sabbirhossain-git">
     <img src="https://komarev.com/ghpvc/?username=sabbirhossain-git&label=Profile%20Views&color=0EA5E9&style=for-the-badge" alt="Profile Views" />
-  </a>
-  <a href="mailto:sabbirhossain50000@gmail.com">
-    <img src="https://img.shields.io/badge/Email-sabbirhossain50000%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
 
@@ -30,16 +39,17 @@
 
 ### 👨‍💻 About Me
 
-<img align="right" width="210" style="border-radius: 18px; margin-left: 20px; margin-bottom: 10px;" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/main/sabbir-avatar.png" alt="Sabbir Hossain" />
+<img align="right" width="220" style="border-radius: 18px; margin-left: 20px; margin-bottom: 12px;" src="https://raw.githubusercontent.com/sabbirhossain-git/sabbirhossain-git/main/sabbir-avatar.png" alt="Sabbir Hossain" />
 
 I am a **Software Engineering & IoT Developer** and a **University Student** majoring in Computer Science & Engineering (CSE). I build full-stack web applications, autonomous AI agent ecosystems, and microcontroller-based IoT systems.
 
+- 🌐 **Official Portfolio Website:** **[sabbirhossain-git.github.io](https://sabbirhossain-git.github.io/)**
 - 🎓 **Academic Focus:** University Student studying Data Structures & Algorithms, Operating Systems, Database Management Systems (DBMS), Computer Networks, and Embedded Systems.
 - 🤖 **AI & Automation:** Architecting multi-agent workflows, RAG pipelines, Model Context Protocol (MCP) integrations, and automated developer toolchains.
 - ⚡ **Hardware & IoT:** Designing ESP32/ESP8266/Arduino firmware, real-time sensor telemetry, and edge-AI integrations.
-- 🌐 **Interactive Portfolio:** Check out my 3D Bento & CLI Portfolio at **[sabbirhossain-git.github.io/sabbirhossain-git](https://sabbirhossain-git.github.io/sabbirhossain-git/)**
-- 💬 **Ask Me About:** Python, Django, FastAPI, TypeScript, C/C++, ESP32, Multi-Agent Systems, and System Design.
-- 📫 **Reach Me:** [sabbirhossain50000@gmail.com](mailto:sabbirhossain50000@gmail.com)
+- 📞 **Phone / WhatsApp:** **+880 1307-919989** (`01307919989` — [Chat on WhatsApp](https://wa.me/8801307919989))
+- 📧 **Email:** [sabbirhossain50000@gmail.com](mailto:sabbirhossain50000@gmail.com)
+- 🔗 **Social Profiles:** [Facebook](https://www.facebook.com/share/1JGr1sXEsS/) • [Instagram (@s.a.b.b.i.r__h.o.s.s.a.i.n)](https://www.instagram.com/s.a.b.b.i.r__h.o.s.s.a.i.n) • [GitHub (@sabbirhossain-git)](https://github.com/sabbirhossain-git)
 
 <br clear="right"/>
 
@@ -62,7 +72,7 @@ I am a **Software Engineering & IoT Developer** and a **University Student** maj
 
 ---
 
-### 🚀 Featured Engineering Projects
+### 🚀 Featured Engineering Projects (Synced with [Live Portfolio](https://sabbirhossain-git.github.io/))
 
 | Project | Tech Stack | Architecture & Key Contributions |
 | :--- | :--- | :--- |
@@ -126,15 +136,26 @@ I am a **Software Engineering & IoT Developer** and a **University Student** maj
 
 I'm always open to collaborating on **Open-Source Projects**, **AI Agent Architectures**, **Full-Stack Web Apps**, and **IoT Systems**.
 
-<a href="https://sabbirhossain-git.github.io/sabbirhossain-git/">
-  <img src="https://img.shields.io/badge/Portfolio-sabbirhossain--git-14B8A6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-</a>
-<a href="https://github.com/sabbirhossain-git">
-  <img src="https://img.shields.io/badge/GitHub-sabbirhossain--git-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-<a href="mailto:sabbirhossain50000@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
+<p align="center">
+  <a href="https://sabbirhossain-git.github.io/">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-sabbirhossain--git.github.io-14B8A6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="https://github.com/sabbirhossain-git">
+    <img src="https://img.shields.io/badge/GitHub-sabbirhossain--git-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.facebook.com/share/1JGr1sXEsS/">
+    <img src="https://img.shields.io/badge/Facebook-Connect-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a href="https://www.instagram.com/s.a.b.b.i.r__h.o.s.s.a.i.n">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="https://wa.me/8801307919989">
+    <img src="https://img.shields.io/badge/WhatsApp_%2F_Call-01307919989-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp / Call" />
+  </a>
+  <a href="mailto:sabbirhossain50000@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-sabbirhossain50000%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" alt="Footer" />
 
